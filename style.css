@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+}
+
+:root {
+    font-family: 'Source Serif Pro';
+    font-size: 62.5%;
+}
+
+body {
+    background: #FFF;
+}
+
+
+main {
+    max-width: 32rem;
+    margin-inline: auto;
+    padding: 5.3rem 3.7rem 5.4rem 3.7rem;
+    box-sizing: content-box;
+
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+img {
+    width: 100%;
+    margin-block: 3.2rem;
+}
+
+h1 {
+    font-size: clamp(2.8rem, 2vw + 1rem, 4rem);
+    color: #A54328;
+}
+
+strong, li, p {
+    font-size: clamp(1.4rem, 1vw + 0.4rem, 2rem);
+    color: #A54328;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+}
+
+button {
+    font-family: 'Source Serif 4';
+    background-color: #A54328;
+    color: var(--neutral-colors-white, #FFF);
+    width: 9.4rem;
+    height: 3.1rem;
+    padding: 1.1rem;
+    font-size: .9rem;
+    border-radius: .6rem;
+    border: none;
+}
+
+@media (min-width: 1124px) {
+    main {
+        flex-direction: row;
+        max-width: fit-content;
+        gap: 16rem;
+    }
+
+    main > div {
+        flex: 1;
+        max-width: 50rem;
+    }
+}
